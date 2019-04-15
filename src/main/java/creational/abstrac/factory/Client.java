@@ -12,5 +12,8 @@ public class Client {
         AbstractFactory factory = factoryProducer.getFactory(Brand.A);
         AbstractProduct productA = factory.manufactureProductA();
         AbstractProduct productB = factory.manufactureProductB();
+
+        System.out.println(productA);
+        System.out.println(productB);
     }
 }

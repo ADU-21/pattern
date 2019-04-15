@@ -2,7 +2,7 @@ package creational.abstrac.factory.product;
 
 import creational.abstrac.factory.factory.Brand;
 
-public class ProductCommon extends AbstractProduct {
+public class Product extends AbstractProduct {
 
     private ProductType productType;
     private Brand brand;
@@ -21,5 +21,13 @@ public class ProductCommon extends AbstractProduct {
 
     public void setBrand(Brand brand) {
         this.brand = brand;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+            "productType=" + productType +
+            ", brand=" + brand +
+            '}';
     }
 }
