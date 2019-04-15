@@ -5,6 +5,19 @@ package creational.abstrac.factory.factory;
  */
 
 public enum Brand {
-    A,
-    B
+    A("BrandA"),
+    B("BrandB");
+
+    private String brand;
+
+    Brand(String brand) {
+        this.brand = brand;
+    }
+
+    @Override
+    public String toString() {
+        return "Brand{" +
+            "brand='" + brand + '\'' +
+            '}';
+    }
 }
