@@ -5,6 +5,9 @@ import creational.abstrac.factory.factory.Brand;
 import creational.abstrac.factory.factory.FactoryProducer;
 import creational.abstrac.factory.product.AbstractProduct;
 
+/**
+ * @author adu
+ */
 public class Client {
     public static void main(String[] args) {
         FactoryProducer factoryProducer = new FactoryProducer();

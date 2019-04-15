@@ -2,6 +2,9 @@ package creational.abstrac.factory.product;
 
 import creational.abstrac.factory.factory.Brand;
 
+/**
+ * @author adu
+ */
 public class Product extends AbstractProduct {
 
     private ProductType productType;

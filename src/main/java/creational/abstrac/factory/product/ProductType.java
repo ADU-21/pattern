@@ -1,5 +1,8 @@
 package creational.abstrac.factory.product;
 
+/**
+ * @author adu
+ */
 public enum ProductType {
     A("ProductA"),
     B("ProductB");
