@@ -3,7 +3,6 @@ package creational.abstrac.factory.factory;
 /**
  * @author adu
  */
-
 public enum Brand {
     A("BrandA"),
     B("BrandB");
@@ -12,6 +11,10 @@ public enum Brand {
 
     Brand(String brand) {
         this.brand = brand;
+    }
+
+    public String getValue() {
+        return brand;
     }
 
     @Override

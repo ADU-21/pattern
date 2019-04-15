@@ -13,6 +13,10 @@ public enum ProductType {
         this.product = product;
     }
 
+    public String getValue() {
+        return product;
+    }
+
     @Override
     public String toString() {
         return "ProductType{" +

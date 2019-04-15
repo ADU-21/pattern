@@ -8,14 +8,18 @@ public class FactoryProducer {
     private static final FactoryB factoryB = new FactoryB();
 
     public AbstractFactory getFactory(Brand brand) {
+        AbstractFactory factory = null;
         switch (brand) {
             case A:
-                return factoryA;
+                factory = factoryA;
+                break;
             case B:
-                return factoryB;
+                factory = factoryB;
+                break;
             default:
-                throw new RuntimeException(String.format("Brand not exist, %s", brand));
+                break;
         }
+        return factory;
 
     }
 }

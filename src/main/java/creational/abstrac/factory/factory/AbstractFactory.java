@@ -1,12 +1,13 @@
 package creational.abstrac.factory.factory;
 
-import creational.abstrac.factory.product.AbstractProduct;
+import creational.abstrac.factory.product.AbstractProductA;
+import creational.abstrac.factory.product.AbstractProductB;
 
 /**
  * @author adu
  */
 public abstract class AbstractFactory {
-    public abstract AbstractProduct manufactureProductA();
+    public abstract AbstractProductA manufactureProductA();
 
-    public abstract AbstractProduct manufactureProductB();
+    public abstract AbstractProductB manufactureProductB();
 }
