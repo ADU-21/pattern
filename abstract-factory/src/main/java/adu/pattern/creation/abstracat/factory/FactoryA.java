@@ -6,18 +6,12 @@ package adu.pattern.creation.abstracat.factory;
 public class FactoryA extends AbstractFactory {
 
     @Override
-    public ProductA manufactureProductA() {
-        ProductA productA = new ProductA();
-        productA.setProductType(ProductType.A);
-        productA.setBrand(Brand.A);
-        return productA;
+    public AbstractProductA manufactureProductA() {
+        return new BrandAProductA();
     }
 
     @Override
-    public ProductB manufactureProductB() {
-        ProductB productB = new ProductB();
-        productB.setBrand(Brand.A);
-        productB.setProductType(ProductType.B);
-        return productB;
+    public AbstractProductB manufactureProductB() {
+        return new BrandAProductB();
     }
 }

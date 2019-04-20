@@ -19,8 +19,6 @@ public enum ProductType {
 
     @Override
     public String toString() {
-        return "ProductType{" +
-            "product='" + product + '\'' +
-            '}';
+        return this.getValue();
     }
 }

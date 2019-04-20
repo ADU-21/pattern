@@ -19,8 +19,6 @@ public enum Brand {
 
     @Override
     public String toString() {
-        return "Brand{" +
-            "brand='" + brand + '\'' +
-            '}';
+        return this.getValue();
     }
 }
