@@ -27,6 +27,7 @@
     </properties>
     <modules>
         <module>abstract-factory</module>
+        <module>builder</module>
     </modules>
 
 
