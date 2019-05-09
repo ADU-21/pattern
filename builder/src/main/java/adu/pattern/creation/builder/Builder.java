@@ -4,11 +4,10 @@ package adu.pattern.creation.builder;
  * @author adu
  * @data 2019/4/21
  */
-public abstract class Builder {
+public interface Builder {
+    Builder elementA(String elementA);
 
-    public abstract Builder elementA(String elementA);
+    Builder elementB(String elementB);
 
-    public abstract Builder elementB(String elementB);
-
-    public abstract Builder elementC(String elementC);
+    Builder elementC(String elementC);
 }

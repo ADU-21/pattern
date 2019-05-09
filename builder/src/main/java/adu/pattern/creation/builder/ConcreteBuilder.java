@@ -4,7 +4,7 @@ package adu.pattern.creation.builder;
  * @author adu
  * @data 2019/4/21
  */
-public final class ConcreteBuilder extends Builder{
+public final class ConcreteBuilder implements Builder{
     private String elementA;
     private String elementB;
     private String elementC;
