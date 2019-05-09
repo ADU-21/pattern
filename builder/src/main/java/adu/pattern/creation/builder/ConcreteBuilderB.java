@@ -4,34 +4,30 @@ package adu.pattern.creation.builder;
  * @author adu
  * @data 2019/4/21
  */
-public final class ConcreteBuilderB implements BuildElementB, BuildElementC{
-    private String elementB;
-    private String elementC;
-
-    private ConcreteBuilderB() {
-    }
-
-    public static ConcreteBuilderB create() {
-        return new ConcreteBuilderB();
-    }
-
+public class ConcreteBuilderB implements Builder{
+    private ProductB productB;
 
     @Override
-    public ConcreteBuilderB elementB(String elementB) {
-        this.elementB = elementB;
-        return this;
+    public void reset() {
+        this.productB = new ProductB();
     }
 
     @Override
-    public ConcreteBuilderB elementC(String elementC) {
-        this.elementC = elementC;
-        return this;
+    public void elementA(String elementA) {
+        this.productB.setElementA(elementA);
     }
 
-    public Product build() {
-        Product product = new Product();
-        product.setElementB(elementB);
-        product.setElementC(elementC);
-        return product;
+    @Override
+    public void elementB(String elementB) {
+        this.productB.setElementB(elementB);
+    }
+
+    @Override
+    public void elementC(String elementC) {
+        this.productB.setElementC(elementC);
+    }
+
+    public ProductB getProductB() {
+        return this.productB;
     }
 }

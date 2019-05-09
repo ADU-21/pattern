@@ -5,17 +5,21 @@ package adu.pattern.creation.builder;
  * @data 2019/4/21
  */
 public class Director {
-    public Product constructA() {
-        return ConcreteBuilderA.create()
-            .elementA("elementA")
-            .elementB("elementB")
-            .build();
+    private Builder builder;
+
+    public void setBuilder(Builder builder) {
+        this.builder = builder;
     }
 
-    public Product constructB() {
-        return ConcreteBuilderB.create()
-            .elementB("elementB")
-            .elementC("elementC")
-            .build();
+    public void constructA(Builder builder) {
+        builder.reset();
+        builder.elementA("elementA");
+        builder.elementB("elementB");
+    }
+
+    public void constructB(Builder builder) {
+        builder.reset();
+        builder.elementB("elementB");
+        builder.elementC("elementC");
     }
 }

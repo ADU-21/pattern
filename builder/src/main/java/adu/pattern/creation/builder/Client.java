@@ -9,8 +9,14 @@ public class Client {
     public static void main(String[] args) {
         Director director = new Director();
 
-        Product productA = director.constructA();
-        Product productB = director.constructB();
+        ConcreteBuilderA builderA = new ConcreteBuilderA();
+        director.constructA(builderA);
+        ProductA productA = builderA.getProductA();
+
+        ConcreteBuilderB builderB = new ConcreteBuilderB();
+        director.constructB(builderB);
+        ProductB productB = builderB.getProductB();
+
         System.out.println(productA);
         System.out.println(productB);
     }

@@ -6,7 +6,7 @@ import java.io.Serializable;
  * @author adu
  * @data 2019/4/21
  */
-public class Product implements Serializable {
+public class ProductA implements Serializable {
     private String elementA;
     private String elementB;
     private String elementC;
@@ -37,7 +37,7 @@ public class Product implements Serializable {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "ProductA{" +
             "elementA='" + elementA + '\'' +
             ", elementB='" + elementB + '\'' +
             ", elementC='" + elementC + '\'' +
