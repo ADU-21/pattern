@@ -9,7 +9,9 @@ public class Client {
     public static void main(String[] args) {
         Director director = new Director();
 
-        Product product = director.construct();
-        System.out.println(product);
+        Product productA = director.constructA();
+        Product productB = director.constructB();
+        System.out.println(productA);
+        System.out.println(productB);
     }
 }
