@@ -18,3 +18,6 @@ Client can use FactoryProducer create Factory with specify brand, and then use f
 - You don't necessarily need an AbstractProduct class for AbstractProductA and AbstractProductB.
 - AbstractFactory and AbstractProduct can be either abstract class or interface.
 - FactoryProducers can also be excluded in this pattern. I putx``` it there because I believe it will be easier to use by client with a producer.
+
+# Reference:
+<https://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/abstract_factory.html>
