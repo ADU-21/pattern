@@ -6,6 +6,12 @@ package adu.pattern.creation.factory.method;
  */
 public class ProductB extends Product {
 
+    private ProductType productType;
+
+    public ProductB(ProductType productType) {
+        this.productType = productType;
+    }
+
     @Override
     String show() {
         return this.toString();
@@ -13,6 +19,8 @@ public class ProductB extends Product {
 
     @Override
     public String toString() {
-        return "ProductB{}";
+        return "ProductB{" +
+            "productType=" + productType +
+            '}';
     }
 }

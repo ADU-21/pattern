@@ -5,5 +5,5 @@ package adu.pattern.creation.factory.method;
  * @data 2019/5/10
  */
 public interface Factory {
-    Product makeProduct();
+    Product makeProduct(ProductType productType);
 }

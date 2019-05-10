@@ -6,7 +6,7 @@ package adu.pattern.creation.factory.method;
  */
 public class ConcreteFactoryA implements Factory {
     @Override
-    public Product makeProduct() {
-        return new ProductA();
+    public Product makeProduct(ProductType productType) {
+        return new ProductA(productType);
     }
 }
