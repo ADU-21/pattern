@@ -29,6 +29,7 @@
         <module>abstract-factory</module>
         <module>builder</module>
         <module>factory-method</module>
+        <module>factory-kit</module>
     </modules>
 
 
