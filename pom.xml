@@ -30,6 +30,7 @@
         <module>builder</module>
         <module>factory-method</module>
         <module>factory-kit</module>
+        <module>object-pool</module>
     </modules>
 
 
