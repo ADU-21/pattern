@@ -32,6 +32,7 @@
         <module>factory-kit</module>
         <module>object-pool</module>
         <module>prototype</module>
+        <module>singleton</module>
     </modules>
 
 
