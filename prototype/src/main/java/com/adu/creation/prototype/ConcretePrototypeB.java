@@ -8,7 +8,7 @@ public class ConcretePrototypeB implements Prototype {
 
     private String field1;
     private String field2;
-    private Object element;
+    private Element element;
 
     public String getField1() {
         return field1;
@@ -26,18 +26,20 @@ public class ConcretePrototypeB implements Prototype {
         this.field2 = field2;
     }
 
-    public Object getElement() {
+    public Element getElement() {
         return element;
     }
 
-    public void setElement(Object element) {
+    public void setElement(Element element) {
         this.element = element;
     }
 
     @Override
-    public Prototype clone() {
+    public ConcretePrototypeB clone() {
         try {
-            return (Prototype)super.clone();
+            ConcretePrototypeB concretePrototypeB = (ConcretePrototypeB)super.clone();
+            concretePrototypeB.setElement(new Element(this.getElement().getName()));
+            return concretePrototypeB;
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
             return null;
@@ -46,7 +48,7 @@ public class ConcretePrototypeB implements Prototype {
 
     @Override
     public String toString() {
-        return "ConcretePrototypeB{" +
+        return "ConcretePrototypeA{" +
             "field1='" + field1 + '\'' +
             ", field2='" + field2 + '\'' +
             ", element=" + element +

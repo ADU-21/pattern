@@ -1,22 +1,37 @@
 package com.adu.creation.prototype;
 
-import java.util.Arrays;
-import java.util.HashMap;
-
 /**
  * @author adu
  * @data 2019/5/18
  */
 public class Client {
     public static void main(String[] args) {
-        ConcretePrototypeA prototype = new ConcretePrototypeA();
-        prototype.setField1("filed1");
-        prototype.setField2("filed2");
-        prototype.setElement(Arrays.asList("a", "b"));
-        Prototype prototype1 = prototype.clone();
-        prototype.setField1("filedA");
+        // Shallow copy
+        ConcretePrototypeA prototypeA = new ConcretePrototypeA();
+        prototypeA.setField1("filed1");
+        prototypeA.setField2("filed2");
+        Element element = new Element("name");
+        prototypeA.setElement(element);
 
-        System.out.println(prototype);
+        ConcretePrototypeA prototype1 = prototypeA.clone();
+        element.setName("nameChanged");
+        prototype1.setField1("filedA");
+
+        System.out.println(prototypeA);
         System.out.println(prototype1);
+
+        // Deep copy
+        ConcretePrototypeB prototypeB = new ConcretePrototypeB();
+        prototypeB.setField1("field1");
+        prototypeB.setField2("field2");
+        Element elementB = new Element("name");
+        prototypeB.setElement(elementB);
+
+        ConcretePrototypeB prototype2 = prototypeB.clone();
+        elementB.setName("nameChanged");
+        prototype2.setField2("filedB");
+
+        System.out.println(prototypeB);
+        System.out.println(prototype2);
     }
 }

@@ -1,8 +1,5 @@
 package com.adu.creation.prototype;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author adu
  * @data 2019/5/18
@@ -11,7 +8,7 @@ public class ConcretePrototypeA implements Prototype {
 
     private String field1;
     private String field2;
-    private List element;
+    private Element element;
 
     public String getField1() {
         return field1;
@@ -29,18 +26,18 @@ public class ConcretePrototypeA implements Prototype {
         this.field2 = field2;
     }
 
-    public Object getElement() {
+    public Element getElement() {
         return element;
     }
 
-    public void setElement(List element) {
+    public void setElement(Element element) {
         this.element = element;
     }
 
     @Override
-    public Prototype clone() {
+    public ConcretePrototypeA clone() {
         try {
-            return (Prototype)super.clone();
+            return (ConcretePrototypeA)super.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
             return null;
