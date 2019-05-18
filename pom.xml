@@ -31,6 +31,7 @@
         <module>factory-method</module>
         <module>factory-kit</module>
         <module>object-pool</module>
+        <module>prototype</module>
     </modules>
 
 
