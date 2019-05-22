@@ -10,7 +10,8 @@ Decorators provide a flexible alternative to subclassing for extending functiona
 
 # Note
 - ConcreteDecorator can have different types.
-- Decorator normally named Wrapper
+- Decorator normally named Wrapper.
+- Decorator abstract class is not necessary.
 
 # Reference
 <https://www.cnblogs.com/octobershiner/archive/2011/11/04/2236730.html>
