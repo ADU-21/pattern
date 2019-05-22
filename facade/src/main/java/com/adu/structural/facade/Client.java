@@ -6,6 +6,7 @@ package com.adu.structural.facade;
  */
 public class Client {
     public static void main(String[] args) {
-
+        Facade facade = new FacadeImpl(new SystemA(), new SystemB(), new SystemC());
+        facade.wrapOption();
     }
 }
