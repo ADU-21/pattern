@@ -40,6 +40,7 @@
         <module>facade</module>
         <module>flyweight</module>
         <module>private-class-data</module>
+        <module>proxy</module>
     </modules>
 
 
