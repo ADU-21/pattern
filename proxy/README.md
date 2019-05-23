@@ -13,3 +13,4 @@ Allows for object level access control by acting as a pass through entity or a p
 
 # Reference
 <https://www.tutorialspoint.com/design_pattern/proxy_pattern.htm>
+<https://www.ibm.com/developerworks/cn/java/j-lo-proxy-pattern/index.html>
