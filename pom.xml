@@ -39,6 +39,7 @@
         <module>decorator</module>
         <module>facade</module>
         <module>flyweight</module>
+        <module>private-class-data</module>
     </modules>
 
 
