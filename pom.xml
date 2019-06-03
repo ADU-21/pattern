@@ -41,6 +41,7 @@
         <module>flyweight</module>
         <module>private-class-data</module>
         <module>proxy</module>
+        <module>chain-of-responsibility</module>
     </modules>
 
 
