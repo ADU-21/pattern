@@ -10,3 +10,6 @@ The chain can be composed dynamically at runtime with any handler that follows a
 
 # Reference
 <https://www.baeldung.com/chain-of-responsibility-pattern>
+
+# Note
+- FilterChain is a linked list with same filter object.
